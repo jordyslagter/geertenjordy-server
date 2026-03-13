@@ -12,16 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-name = "AudioPlayer"
-filename = "audioplayer-fabric-1.21.5-1.13.2.jar"
-side = "server"
-
-[download]
-url = "https://cdn.modrinth.com/data/SRlzjEBS/versions/gJYpGwtr/audioplayer-fabric-1.21.5-1.13.2.jar"
-hash-format = "sha1"
-hash = "c2552bf2d710b3197d059768bc131f346b8b8c0b"
-
-[update]
-[update.modrinth]
-mod-id = "SRlzjEBS"
-version = "gJYpGwtr"
+repos:
+  - repo: https://github.com/google/addlicense
+    rev: v1.2.0
+    hooks:
+      - id: addlicense
+        args: ["-c", "Jordy Slagter", "-l", "apache"]
